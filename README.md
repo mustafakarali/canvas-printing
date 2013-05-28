@@ -1,4 +1,16 @@
 Canvas-Printing
-===============
+===
 
-A basic site written in HTML CSS and PHP
+#####POC 
+
+
+***
+
+This is a basic proof of concept site written with HTML, CSS, and modest JS with a PHP backended.   
+
+It's purpose is to demostrate a simple photo gallery/canvas printing website with some basic featuers:
+
+- Dynamic photo gallery, users can upload their own pictures
+- Create Users and make order
+- Modify price based on the dimensions of the order
+- Track past orders
