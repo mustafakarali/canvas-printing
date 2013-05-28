@@ -1,8 +1,7 @@
 Canvas-Printing
 ===
 
-#####POC 
-
+#####A Simple photo gallery/print ordering POC website
 
 ***
 
