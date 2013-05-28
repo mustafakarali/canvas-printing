@@ -1,0 +1,31 @@
+html {
+  text-align: left;
+  background-color: #3D72A4;
+/*  background-color: #bd8cf7;*/
+  font-family: "Andale Mono", "MS Trebuchet", sans-serif;
+/*  font-family: "Tahoma", "MS Trebuchet", sans-serif;*/
+  padding: 10px;
+  list-style-type: disc;
+  border: 20px solid #000;
+} 
+table {
+  border: 2px solid #000;
+  text-align: center;
+  margin: 20px;
+}
+td, th {
+  padding: 3px;
+}
+img{
+  border: 2px solid #FFFFFF;
+}
+h1 {
+  background-color: #10084d;
+  color: rgb(255,255,255);
+}
+h2 {
+  background-color: rgb(255,255,255);
+}
+h3 {
+  text-decoration: underline;
+}
