@@ -18,6 +18,7 @@ It's purpose is to demostrate a simple photo gallery/canvas printing website wit
 To-Do
 
 - Migrate to Heroku supported PHP functions *done*
-- Update scripts/generateDatabase.sql to match layout I would like
+- Update scripts/generateDatabase.sql to match layout I would like *done*
+- Get image upload to function on Heroku/cleardb:ignite
 - Update site content and code to match more recent skills
 - Try cookies
