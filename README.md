@@ -20,5 +20,6 @@ To-Do
 - Migrate to Heroku supported PHP functions *done*
 - Update scripts/generateDatabase.sql to match layout I would like *done*
 - Get image upload to function on Heroku/cleardb:ignite
+- Try using new binaries for gd library -> if that does not work switch functions to imagick and test that library.
 - Update site content and code to match more recent skills
 - Try cookies
