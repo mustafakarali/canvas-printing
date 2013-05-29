@@ -20,7 +20,7 @@ address_street varchar(20) NOT NULL,
 address_city varchar(20) NOT NULL,
 province varchar(20) NOT NULL,
 postal_code varchar(20) NOT NULL,
-email varchar(20) NOT NULL,
+email varchar(50) NOT NULL,
 password varchar(10) NOT NULL,
 client_id int NOT NULL AUTO_INCREMENT,
 PRIMARY KEY (client_id)
