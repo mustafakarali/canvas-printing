@@ -8,18 +8,32 @@
   <script type="text/javascript" src="scripts/javaScripts.js"></script>
 </head>
 <?php
-include("menu_bar.php");
-$link = new mysqli("localhost", "root", "", "db_canvas_printing");
-if(!$link) {
-  die("Connection Failed: ". $link->error());
+$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"],1);
+
+$link = mysql_connect($server, $username, $password);
+if (!$link) {
+  echo "Can't Link";
+  die('Not connected : ' . mysql_error());
+}      
+
+$db_selected = mysql_select_db($db, $link);
+if (!$db_selected) {
+  echo "Can't connect to database";
+  die ('Can\'t use foo : ' . mysql_error());
 }
+
 $selected_image = $_POST['selected'];
 
 $email = $_POST["username"];
 $password = $_POST["password"];
 $query = "SELECT * FROM clients WHERE email = '$email' AND password = '$password'";
 $result = $link->query($query);
-$client = $result->fetch_assoc();
+$client = mysql_fetch_array($result);
 $num_results = $result->num_rows;
 if($num_results == 0){
   echo "<div style='text-align:center'";
@@ -28,7 +42,7 @@ if($num_results == 0){
 }
 else{
 $image = $link->query("SELECT * FROM images WHERE image_id = '$selected_image'");
-$row = $image->fetch_assoc();
+$row = mysql_fetch_array($image);
 ?>
 
 <body id="order" onload="">

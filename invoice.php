@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <?php
-$link = new mysqli("localhost", "root", "", "db_canvas_printing");
-if(!$link) {
-  die("Connection Failed: ". $link->error());
+$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"],1);
+
+$link = mysql_connect($server, $username, $password);
+if (!$link) {
+  echo "Can't Link";
+  die('Not connected : ' . mysql_error());
+}      
+
+$db_selected = mysql_select_db($db, $link);
+if (!$db_selected) {
+  echo "Can't connect to database";
+  die ('Can\'t use foo : ' . mysql_error());
+}
+
+$result = mysql_query("SELECT * FROM images", $link);
+if (!$result) {
+    throw new Exception("Database Error [{$this->database->errno}] {$this->database->error}");
 }
 
 $image_selected = $_POST["image_selected"];
@@ -19,11 +38,7 @@ $cost = $_POST["cost"];
 $tax = $_POST["tax"];
 $query = "SELECT * FROM clients WHERE client_id = '$clientID'";
 $result = $link->query($query);
-$client = $result->fetch_assoc();
-
-
-
-
+$client = mysql_fetch_array($result);
 
 ?>
 

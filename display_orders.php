@@ -9,10 +9,30 @@
 </head>
 <?php
 include("menu_bar.php");
-$link = new mysqli("localhost", "root", "", "db_canvas_printing");
-if(!$link) {
-  die("Connection Failed: ". $link->error());
+$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"],1);
+
+$link = mysql_connect($server, $username, $password);
+if (!$link) {
+  echo "Can't Link";
+  die('Not connected : ' . mysql_error());
+}      
+
+$db_selected = mysql_select_db($db, $link);
+if (!$db_selected) {
+  echo "Can't connect to database";
+  die ('Can\'t use foo : ' . mysql_error());
 }
+
+$result = mysql_query("SELECT * FROM images", $link);
+if (!$result) {
+    throw new Exception("Database Error [{$this->database->errno}] {$this->database->error}");
+}
+
 $selected_image = $_POST['selected'];
 
 $email = $_POST["username"];
@@ -27,7 +47,7 @@ if($num_results == 0){
   echo "</div>";
 }
 else{
-$client = $result->fetch_assoc();
+$client = mysql_fetch_array($result);
 $result->close();
 $order = $link->query("SELECT * FROM orders WHERE client_id = '$client[client_id]'");
 $num_results = $order->num_rows;
@@ -36,7 +56,7 @@ if($num_results == 0){
 }
 else{
   $image = $link->query("SELECT * FROM images WHERE image_id = '$selected_image'");
-  $row = $image->fetch_assoc();
+  $row = mysql_fetch_array($image);
   ?>
   <body id="order" onload="">
     <h1><?php echo "".$client['first_name']." ".$client['last_name']."";?>'s Orders</h1>
@@ -47,10 +67,10 @@ else{
         <th>Width</th>
         <th>Cost</th>
       </tr>
-      <?php while($row = $order->fetch_assoc()){ 
+      <?php while($row = mysql_fetch_array($order);
         echo "<tr>";
         $image_q = $link->query("SELECT * FROM images WHERE image_id = '$row[image_id]'");
-        $image = $image_q->fetch_assoc();
+        $image = mysql_fetch_array($image_q);
         $image_q->close();
         echo "<td> <img src = 'images/".$image['image_name']."' alt=".$row['image_id']."  width='400' height='200'></td>\n";
         echo '<td>'.$row['height'].'" </td>';
