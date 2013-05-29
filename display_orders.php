@@ -39,6 +39,7 @@ $email = $_POST["username"];
 $password = $_POST["password"];
 
 $query = "SELECT * FROM clients WHERE email = '$email' AND password = '$password'";
+echo $query
 $result = mysql_query($query, $link);
 $num_results = $result->num_rows;
 if($num_results == 0){
