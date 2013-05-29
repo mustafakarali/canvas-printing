@@ -24,7 +24,7 @@ if (!$link) {
 $db_selected = mysql_select_db($db, $link);
 if (!$db_selected) {
   echo "Can't connect to database";
-  die ('Can\'t use foo : ' . mysql_error());
+  die('Can\'t connect to $db : ' . mysql_error());
 }
 
 $selected_image = $_POST['selected'];
