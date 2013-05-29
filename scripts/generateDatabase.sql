@@ -1,11 +1,3 @@
--- 
---  generateDatabase.sql
---  comp2405a4
---  
---  Created by Martin Gingras on 2012-03-31.
---  Copyright 2012 Martin Gingras. All rights reserved.
--- 
-
 -- Create the database if it doesnt exist
 create database if not exists db_canvas_printing;
 use db_canvas_printing;
@@ -44,7 +36,7 @@ PRIMARY KEY (image_id)
 -- Establishing the Images Database some Images and their descriptions
 
 INSERT INTO clients(first_name, last_name, address_street, address_city, province, postal_code, email, password) values
-("Martin","Gingras","279 Shakespeare Dr.","Waterloo","Ontario","N2L2V6","mg@g.com","potty");
+("Martin","Gingras","3480 McCarthy Rd.","Ottawa","Ontario","K1V9A1","martin@magingras.com","password");
 
 INSERT INTO images (image_id, image_name, description) VALUES
 (1000, "one.jpeg", "Beautiful beach covered in driftwood at dusk");
