@@ -13,3 +13,10 @@ It's purpose is to demostrate a simple photo gallery/canvas printing website wit
 - Create Users and make order
 - Modify price based on the dimensions of the order
 - Track past orders
+
+
+To-Do
+
+- Migrate to Heroku supported PHP functions *done*
+- Update site content and code to match more recent skills
+- Try cookies
