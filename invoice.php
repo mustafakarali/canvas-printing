@@ -42,7 +42,7 @@ $client = mysql_fetch_array($result);
 
 ?>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="height:100%;">
+<html lang="en">
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title>Orders</title>
