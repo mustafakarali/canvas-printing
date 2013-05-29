@@ -30,7 +30,7 @@ if (!$db_selected) {
 
 $result = mysql_query("SELECT * FROM images", $link);
 if (!$result) {
-    throw new Exception("Database Error [{$this->database->errno}] {$this->database->error}");
+  throw new Exception("Database Error [{$this->database->errno}] {$this->database->error}");
 }
 
 $selected_image = $_POST['selected'];
@@ -47,26 +47,27 @@ if($num_results == 0){
   echo "</div>";
 }
 else{
-$client = mysql_fetch_array($result);
-$order = mysql_query("SELECT * FROM orders WHERE client_id = '$client[client_id]'", $link);
-$num_results = $order->num_rows;
-if($num_results == 0){
-  echo "<h3> You have no orders...<br> go browse the gallery and make some purchases! </h3>";
-}
-else{
-  $image = mysql_query("SELECT * FROM images WHERE image_id = '$selected_image'", $link);
-  $row = mysql_fetch_array($image);
-  ?>
-  <body id="order" onload="">
-    <h1><?php echo "".$client['first_name']." ".$client['last_name']."";?>'s Orders</h1>
-    <table border="1" >
-      <tr>
-        <th>Image</th>
-        <th>Height</th>
-        <th>Width</th>
-        <th>Cost</th>
-      </tr>
-      <?php while($row = mysql_fetch_array($order);
+  $client = mysql_fetch_array($result);
+  $order = mysql_query("SELECT * FROM orders WHERE client_id = '$client[client_id]'", $link);
+  $num_results = $order->num_rows;
+  if($num_results == 0){
+    echo "<h3> You have no orders...<br> go browse the gallery and make some purchases! </h3>";
+  }
+  else{
+    $image = mysql_query("SELECT * FROM images WHERE image_id = '$selected_image'", $link);
+    $row = mysql_fetch_array($image);
+    ?>
+    <body id="order" onload="">
+      <h1><?php echo "".$client['first_name']." ".$client['last_name']."";?>'s Orders</h1>
+      <table border="1" >
+        <tr>
+          <th>Image</th>
+          <th>Height</th>
+          <th>Width</th>
+          <th>Cost</th>
+        </tr>
+        <?php 
+        while($row = mysql_fetch_array($order);
         echo "<tr>";
         $image_q = mysql_query("SELECT * FROM images WHERE image_id = '$row[image_id]'", $link);
         $image = mysql_fetch_array($image_q);
@@ -76,10 +77,10 @@ else{
         echo '<td>'.$row['cost'].'$ </td>';
         echo "</tr>";
       }
-   echo "</table>";
-}
+      echo "</table>";
+    }
     mysql_close($link);
-}
-?>
+  }
+  ?>
 </body>
 </html>
