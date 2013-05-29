@@ -48,7 +48,6 @@ if($num_results == 0){
 }
 else{
 $client = mysql_fetch_array($result);
-$result->close();
 $order = mysql_query("SELECT * FROM orders WHERE client_id = '$client[client_id]'", $link);
 $num_results = $order->num_rows;
 if($num_results == 0){
@@ -71,17 +70,15 @@ else{
         echo "<tr>";
         $image_q = mysql_query("SELECT * FROM images WHERE image_id = '$row[image_id]'", $link);
         $image = mysql_fetch_array($image_q);
-        $image_q->close();
         echo "<td> <img src = 'images/".$image['image_name']."' alt=".$row['image_id']."  width='400' height='200'></td>\n";
         echo '<td>'.$row['height'].'" </td>';
         echo '<td>'.$row['width'].'" </td>';
         echo '<td>'.$row['cost'].'$ </td>';
         echo "</tr>";
       }
-      $order->close();
    echo "</table>";
 }
-    $link->close();
+    mysql_close($link);
 }
 ?>
 </body>

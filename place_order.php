@@ -70,8 +70,7 @@ $row = mysql_fetch_array($image);
 
   <?php 
 }
-$result->close();
-$link->close();
+mysql_close($link);
 ?>
 </body>
 </html>

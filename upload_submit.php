@@ -167,7 +167,7 @@ $info = getimagesize($tmp_location);
   }
     $sql = "INSERT INTO images(image_name, description) values ('$image_name', '$description')";
     $result = mysql_query($sql, $link);
-    $link->close();
+    mysql_close($link);
     ?>
     <h1>Image Successfully Uploaded!</h1>
     <h2>Congratulations!</h2>
