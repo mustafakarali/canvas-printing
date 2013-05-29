@@ -19,7 +19,7 @@ if (!$db_selected) {
   die ('Can\'t use foo : ' . mysql_error());
 }
 
-$result = mysql_mysql_query("SELECT * FROM images", $link);
+$result = mysql_query("SELECT * FROM images", $link);
 if (!$result) {
     throw new Exception("Database Error [{$this->database->errno}] {$this->database->error}");
 }
