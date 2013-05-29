@@ -41,34 +41,37 @@ if($num_results == 0){
   echo "</div>";
 }
 else{
-  $image = mysql_query("SELECT * FROM images WHERE image_id = '$selected_image'", $link);
-  $row = mysql_fetch_array($image);
-  ?>
+$image = mysql_query("SELECT * FROM images WHERE image_id = '$selected_image'", $link);
+$row = mysql_fetch_array($image);
+?>
 
-  <body id="order" onload="">
-    <form action="invoice.php" method="post" accept-charset="utf-8">
-      <?php
-      echo "<input type='text' name='clientID' value=".$client['client_id']." style='visibility:hidden;'><br>";a
-        echo "<img src    = 'images/".$row['image_name']."' alt=".$row['image_id']."  width='400' height='200'> ";
-      ?>
+<body id="order" onload="">
+  <form action="invoice.php" method="post" accept-charset="utf-8">
+    <?php
+  echo "<input type='text' name='clientID' value=".$client['client_id']." style='visibility:hidden;'><br>";
 
-      <p>Image Selected:&nbsp; <input type="text" name="image_selected" value=<?php echo "$selected_image"; ?> onfocus="blur();"></p>
-      <p>Width: <input type="text" name="desiredWidth" placeholder='Desired Width(inches)' id="desiredWidth" onchange="calculate()">"
-        &nbsp;&nbsp;Height: <input type="text" name="desiredHeight" placeholder='Desired Height(inches)' id="desiredHeight" onchange="calculate()">"
-      </p>
-      <p>Cost:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="cost" onfocus="blur();" id="cost">$</p>
-      <p>Shipping:&nbsp;&nbsp;&nbsp;+<input type="text" name="shipping" onfocus="blur();" id="shipping">$</p>
-      <p>Tax:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+<input type="text" name="tax" onfocus="blur();" id="tax">$</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_____________</p>
-      <p>Total Cost:&nbsp;&nbsp;<input type="text" name="total_cost" onfocus="blur();" id="totalCost">$</p>
-      <input type="submit" name="submitOrder" value="Submit Order" id="submitOrder">
-      <input type="reset" name="clearForm" value="Clear Form" id="clearForm">
-    </form>
 
-    <?php 
-  }
-  // $result->close();
-  $link->close();
-  ?>
+
+    echo "<img src    = 'images/".$row['image_name']."' alt=".$row['image_id']."  width='400' height='200'> ";
+    ?>
+
+    <p>Image Selected:&nbsp; <input type="text" name="image_selected" value=<?php echo "$selected_image"; ?> onfocus="blur();"></p>
+    <p>Width: <input type="text" name="desiredWidth" placeholder='Desired Width(inches)' id="desiredWidth" onchange="calculate()">"
+      &nbsp;&nbsp;Height: <input type="text" name="desiredHeight" placeholder='Desired Height(inches)' id="desiredHeight" onchange="calculate()">"
+    </p>
+    <p>Cost:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="cost" onfocus="blur();" id="cost">$</p>
+    <p>Shipping:&nbsp;&nbsp;&nbsp;+<input type="text" name="shipping" onfocus="blur();" id="shipping">$</p>
+    <p>Tax:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+<input type="text" name="tax" onfocus="blur();" id="tax">$</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_____________</p>
+    <p>Total Cost:&nbsp;&nbsp;<input type="text" name="total_cost" onfocus="blur();" id="totalCost">$</p>
+    <input type="submit" name="submitOrder" value="Submit Order" id="submitOrder">
+    <input type="reset" name="clearForm" value="Clear Form" id="clearForm">
+  </form>
+
+  <?php 
+}
+$result->close();
+$link->close();
+?>
 </body>
 </html>
