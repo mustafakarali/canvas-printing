@@ -19,7 +19,7 @@ if (!$db_selected) {
   die ('Can\'t use foo : ' . mysql_error());
 }
 
-$result = mysql_query("SELECT * FROM images", $link);
+$result = mysql_mysql_query("SELECT * FROM images", $link);
 if (!$result) {
     throw new Exception("Database Error [{$this->database->errno}] {$this->database->error}");
 }
@@ -32,12 +32,12 @@ $height = $_POST["desiredHeight"];
 
 
 $sql = "INSERT INTO orders(image_id, client_id, width, height, cost) values ($image_selected, $clientID, $width, $height, $totalCost)";
-$result = $link->query($sql);
+$result = $link->mysql_query($sql);
 
 $cost = $_POST["cost"];
 $tax = $_POST["tax"];
 $query = "SELECT * FROM clients WHERE client_id = '$clientID'";
-$result = $link->query($query);
+$result = $link->mysql_query($query);
 $client = mysql_fetch_array($result);
 
 ?>
