@@ -1,6 +1,6 @@
 <?php
 $title = "Upload";
-include("menu_bar.php");
+include("head.php");
 ?>
   <h1>Upload:</h1>
   <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your own Images for printing</h2>

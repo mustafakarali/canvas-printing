@@ -1,6 +1,6 @@
 <?php
 $title = "Canvas Types";
-include("menu_bar.php");
+include("head.php");
 ?>
 <h1>Canvas Types:</h1>
 <h2>&nbsp;&nbsp;&nbsp;&nbsp;Learn about our two different types of canvases</h2>

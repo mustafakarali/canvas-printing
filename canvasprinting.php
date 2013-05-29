@@ -1,6 +1,6 @@
 <?php
 $title = "What we do";
-include("menu_bar.php");
+include("head.php");
 ?>
   <h1>What we do...</h1>
   <p>

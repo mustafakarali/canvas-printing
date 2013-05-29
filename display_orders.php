@@ -1,7 +1,7 @@
 
 <?php
 $title = "Order";
-include("menu_bar.php");
+include("head.php");
 
 $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
 

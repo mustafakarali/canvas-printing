@@ -26,7 +26,7 @@ $file_size = $_FILES['image']['size'];
 
 $description = $_POST['description'];
 $title = "Upload Image";
-include("menu_bar.php");
+include("head.php");
 $array = array('image/jpeg', 'image/pjpeg', 'image/gif', 'image/png');
 if(in_array($mime_type, $array)){
 //this will be used if the image is resized

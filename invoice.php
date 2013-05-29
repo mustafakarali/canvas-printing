@@ -41,7 +41,7 @@ $result = mysql_query($query, $link);
 $client = mysql_fetch_array($result);
 
 $title = "Orders";
-include("menu_bar.php");
+include("head.php");
 ?>
 <div style="text-align: center;">
 <h3>Thank you <?php echo $client['first_name'];?> for Ordering a Canvas Print <br> from Martin Gingras Canvas Printing</h3>

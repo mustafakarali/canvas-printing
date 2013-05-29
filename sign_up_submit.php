@@ -42,7 +42,7 @@ $result = mysql_query($sql, $link);
 mysql_close($link);
 
 $title = "Orders";
-include("menu_bar.php");
+include("head.php");
 
 ?>
   <h1>Account Successfully Created!</h1>

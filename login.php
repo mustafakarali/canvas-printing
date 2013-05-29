@@ -8,7 +8,7 @@
 $selected_image = $_POST['selected'];
 
 $title = "Login";
-include("menu_bar.php");
+include("head.php");
 
 ?>
 <h1>Login to Canvas Printing</h1>

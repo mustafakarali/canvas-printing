@@ -1,6 +1,6 @@
 <?php
 $title = "Home";
-include("menu_bar.php");
+include("head.php");
 ?>
   <h1>
     Welcome To Canvas Printing by Martin Gingras

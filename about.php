@@ -1,6 +1,6 @@
         <?php
       $title = "About";
-       include("menu_bar.php");
+       include("head.php");
        ?>
   <h1>About Us</h1>
   <h2 id='develope'>Site Developed By: <strong>Martin Gingras</strong></h2>

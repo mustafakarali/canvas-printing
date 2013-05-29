@@ -1,6 +1,6 @@
 <?php
 $title = "Sign Up";
-include("menu_bar.php");
+include("head.php");
 ?>
 <h1>Sign up for a new accout with canvas printing...</h1>
   <form action="sign_up_submit.php" method="post" accept-charset="utf-8" id="myForm" required="required">

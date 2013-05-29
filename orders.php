@@ -1,6 +1,6 @@
       <?php
       $title = "Orders";
-       include("menu_bar.php");
+       include("head.php");
        ?>
   <h1>View Your Canvas Printing Orders</h1>
   <form action="display_orders.php" method="post" id="myForm">

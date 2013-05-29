@@ -1,6 +1,6 @@
 <?php
 $title = "Prices";
-include("menu_bar.php");
+include("head.php");
 ?>
   <h1>Price Breakdown for Canvas Printing</h1>
   <h2>&nbsp;&nbsp;By Size:</h2>

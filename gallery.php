@@ -25,7 +25,7 @@ if (!$result) {
 }
 
 $title = "Gallery";
-include("menu_bar.php");
+include("head.php");
 
 ?>
   <form action="login.php" method="post" accept-charset="utf-8">
