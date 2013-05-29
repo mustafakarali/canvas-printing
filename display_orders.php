@@ -67,7 +67,7 @@ else{
           <th>Cost</th>
         </tr>
         <?php 
-        while($row = mysql_fetch_array($order){
+        while($row = mysql_fetch_array($order)){
           echo "<tr>";
           $image_q = mysql_query("SELECT * FROM images WHERE image_id = '$row[image_id]'", $link);
           $image = mysql_fetch_array($image_q);
