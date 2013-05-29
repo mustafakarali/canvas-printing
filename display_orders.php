@@ -39,9 +39,8 @@ $email = $_POST["username"];
 $password = $_POST["password"];
 
 $query = "SELECT * FROM clients WHERE email = '$email' AND password = '$password'";
-echo $query;
 $result = mysql_query($query, $link);
-$num_results = $result->num_rows;
+$num_results = mysql_num_rows($result);
 if($num_results == 0){
   echo "<div style='text-align:center'";
   echo "<p>Entered Email and Password combination not in database... <br> <a href='signup.php'>Go here to make an account</a></p>";
@@ -50,7 +49,7 @@ if($num_results == 0){
 else{
   $client = mysql_fetch_array($result);
   $order = mysql_query("SELECT * FROM orders WHERE client_id = '$client[client_id]'", $link);
-  $num_results = $order->num_rows;
+  $num_results = mysql_num_rows($order);
   if($num_results == 0){
     echo "<h3> You have no orders...<br> go browse the gallery and make some purchases! </h3>";
   }

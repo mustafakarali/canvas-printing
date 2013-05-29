@@ -38,7 +38,7 @@ $password = $_POST["password"];
 
 $query = "SELECT * FROM clients WHERE email = '$email'";
 $result = mysql_query($query, $link);
-$num_results = $result->num_rows;
+$num_results = mysql_num_rows($result);
 if($num_results != 0){
   echo "Sorry, the email address you entered has already been taken.<br>Please go back and enter a different address";
 }
