@@ -30,3 +30,22 @@
     </table>
   </div>
 </div>
+
+</body>
+</html>
+
+  <div id="header">
+    <div id="logo">
+      <h1><a href="#"><span>mg</span>printing</a></h1>
+      <p>Gallery and Printing Services to fullfuill all your canvas printing desires</p>
+    </div>
+    <div id="menu">
+      <ul>
+        <li class="first current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+        <li><a href="#" accesskey="2" title="">Services</a></li>
+        <li><a href="#" accesskey="3" title="">About Us</a></li>
+        <li><a href="#" accesskey="4" title="">Careers</a></li>
+        <li><a href="#" accesskey="5" title="">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
