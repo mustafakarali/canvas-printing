@@ -32,7 +32,7 @@ $selected_image = $_POST['selected'];
 $email = $_POST["username"];
 $password = $_POST["password"];
 $query = "SELECT * FROM clients WHERE email = '$email' AND password = '$password'";
-$result = $link->mysql_query($query);
+$result = mysql_query($query, $link);
 $client = mysql_fetch_array($result);
 $num_results = $result->num_rows;
 if($num_results == 0){
@@ -41,7 +41,7 @@ if($num_results == 0){
   echo "</div>";
 }
 else{
-$image = $link->mysql_query("SELECT * FROM images WHERE image_id = '$selected_image'");
+$image = mysql_query("SELECT * FROM images WHERE image_id = '$selected_image'", $link);
 $row = mysql_fetch_array($image);
 ?>
 

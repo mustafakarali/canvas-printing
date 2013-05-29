@@ -32,12 +32,12 @@ $height = $_POST["desiredHeight"];
 
 
 $sql = "INSERT INTO orders(image_id, client_id, width, height, cost) values ($image_selected, $clientID, $width, $height, $totalCost)";
-$result = $link->mysql_query($sql);
+$result = mysql_query($sql, $link);
 
 $cost = $_POST["cost"];
 $tax = $_POST["tax"];
 $query = "SELECT * FROM clients WHERE client_id = '$clientID'";
-$result = $link->mysql_query($query);
+$result = mysql_query($query, $link);
 $client = mysql_fetch_array($result);
 
 ?>

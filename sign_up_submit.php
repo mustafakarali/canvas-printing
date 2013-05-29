@@ -37,7 +37,7 @@ $email = $_POST["email"];
 $password = $_POST["password"];
 
 $query = "SELECT * FROM clients WHERE email = '$email'";
-$result = $link->mysql_query($query);
+$result = mysql_query($query, $link);
 $num_results = $result->num_rows;
 if($num_results != 0){
   echo "Sorry, the email address you entered has already been taken.<br>Please go back and enter a different address";
@@ -45,7 +45,7 @@ if($num_results != 0){
 else{
 $sql = "INSERT INTO clients(first_name, last_name, address_street, address_city, province, postal_code, email, password)
  values ('$first_name', '$last_name', '$address', '$city', '$province', '$postal_code', '$email', '$password')";
-$result = $link->mysql_query($sql);
+$result = mysql_query($sql, $link);
 
 $link->close();
 ?>

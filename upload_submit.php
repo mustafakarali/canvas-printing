@@ -166,7 +166,7 @@ $info = getimagesize($tmp_location);
     throw new Exception("Could not save the image");
   }
     $sql = "INSERT INTO images(image_name, description) values ('$image_name', '$description')";
-    $result = $link->mysql_query($sql);
+    $result = mysql_query($sql, $link);
     $link->close();
     ?>
     <h1>Image Successfully Uploaded!</h1>

@@ -28,7 +28,7 @@ if (!$db_selected) {
   die ('Can\'t use foo : ' . mysql_error());
 }
 
-$result = mysql_mysql_query("SELECT * FROM images", $link);
+$result = mysql_query("SELECT * FROM images", $link);
 if (!$result) {
     throw new Exception("Database Error [{$this->database->errno}] {$this->database->error}");
 }
@@ -39,7 +39,7 @@ $email = $_POST["username"];
 $password = $_POST["password"];
 
 $query = "SELECT * FROM clients WHERE email = '$email' AND password = '$password'";
-$result = $link->mysql_query($query);
+$result = mysql_query($query, $link);
 $num_results = $result->num_rows;
 if($num_results == 0){
   echo "<div style='text-align:center'";
@@ -49,13 +49,13 @@ if($num_results == 0){
 else{
 $client = mysql_fetch_array($result);
 $result->close();
-$order = $link->mysql_query("SELECT * FROM orders WHERE client_id = '$client[client_id]'");
+$order = mysql_query("SELECT * FROM orders WHERE client_id = '$client[client_id]'", $link);
 $num_results = $order->num_rows;
 if($num_results == 0){
   echo "<h3> You have no orders...<br> go browse the gallery and make some purchases! </h3>";
 }
 else{
-  $image = $link->mysql_query("SELECT * FROM images WHERE image_id = '$selected_image'");
+  $image = mysql_query("SELECT * FROM images WHERE image_id = '$selected_image'", $link);
   $row = mysql_fetch_array($image);
   ?>
   <body id="order" onload="">
@@ -69,7 +69,7 @@ else{
       </tr>
       <?php while($row = mysql_fetch_array($order);
         echo "<tr>";
-        $image_q = $link->mysql_query("SELECT * FROM images WHERE image_id = '$row[image_id]'");
+        $image_q = mysql_query("SELECT * FROM images WHERE image_id = '$row[image_id]'", $link);
         $image = mysql_fetch_array($image_q);
         $image_q->close();
         echo "<td> <img src = 'images/".$image['image_name']."' alt=".$row['image_id']."  width='400' height='200'></td>\n";
