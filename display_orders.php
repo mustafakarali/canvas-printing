@@ -67,20 +67,20 @@ else{
           <th>Cost</th>
         </tr>
         <?php 
-        while($row = mysql_fetch_array($order);
-        echo "<tr>";
-        $image_q = mysql_query("SELECT * FROM images WHERE image_id = '$row[image_id]'", $link);
-        $image = mysql_fetch_array($image_q);
-        echo "<td> <img src = 'images/".$image['image_name']."' alt=".$row['image_id']."  width='400' height='200'></td>\n";
-        echo '<td>'.$row['height'].'" </td>';
-        echo '<td>'.$row['width'].'" </td>';
-        echo '<td>'.$row['cost'].'$ </td>';
-        echo "</tr>";
+        while($row = mysql_fetch_array($order){
+          echo "<tr>";
+          $image_q = mysql_query("SELECT * FROM images WHERE image_id = '$row[image_id]'", $link);
+          $image = mysql_fetch_array($image_q);
+          echo "<td> <img src = 'images/".$image['image_name']."' alt=".$row['image_id']."  width='400' height='200'></td>\n";
+          echo '<td>'.$row['height'].'" </td>';
+          echo '<td>'.$row['width'].'" </td>';
+          echo '<td>'.$row['cost'].'$ </td>';
+          echo "</tr>";
+        }
+        echo "</table>";
       }
-      echo "</table>";
+      mysql_close($link);
     }
-    mysql_close($link);
-  }
-  ?>
-</body>
-</html>
+    ?>
+  </body>
+  </html>
