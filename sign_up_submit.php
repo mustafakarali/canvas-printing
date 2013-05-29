@@ -47,7 +47,7 @@ $sql = "INSERT INTO clients(first_name, last_name, address_street, address_city,
  values ('$first_name', '$last_name', '$address', '$city', '$province', '$postal_code', '$email', '$password')";
 $result = mysql_query($sql, $link);
 
-$link->close();
+mysql_close($link);
 ?>
 
   <?php include("menu_bar.php"); ?>

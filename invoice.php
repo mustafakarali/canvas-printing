@@ -62,6 +62,6 @@ $client = mysql_fetch_array($result);
 </div>
 </body>
 <?php 
-$result->close();
-$link->close();?>
+mysql_close($link);
+?>
 </html>

@@ -64,8 +64,7 @@ if (!$result) {
         echo "<td><input type='submit' name='". $row['image_name']."' onClick='updateSelected(".$row['image_id'].");' value='Order This Image &rarr;'></td>\n";
         echo "</tr>";
       }
-      $result->close();
-      $link->close();
+      mysql_close($link);
       ?>
     </form>
 
