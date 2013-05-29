@@ -24,17 +24,10 @@ if (!$result) {
     throw new Exception("Database Error [{$this->database->errno}] {$this->database->error}");
 }
 
-?>
+$title = "Gallery";
+include("menu_bar.php");
 
-<html lang="en">
-<head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Gallery</title>
-  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title">
-  <script type="text/javascript" src="scripts/javaScripts.js"></script>
-</head>
-<body id="gallery" onload="">
-  <?php include("menu_bar.php"); ?>
+?>
   <form action="login.php" method="post" accept-charset="utf-8">
     <table border     = "1" >
       <tr>

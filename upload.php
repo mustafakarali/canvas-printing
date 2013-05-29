@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<htmllang="en">
-<head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Upload</title>
-  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
-</head>
-<body>
-<?php include("menu_bar.php"); ?>
+<?php
+$title = "Upload";
+include("menu_bar.php");
+?>
   <h1>Upload:</h1>
   <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your own Images for printing</h2>
   <form action = "upload_submit.php" method="post"  enctype = "multipart/form-data">

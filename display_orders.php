@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
-<head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Order</title>
-  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
-  <script type="text/javascript" src="scripts/javaScripts.js"></script>
-</head>
 <?php
+$title = "Order";
 include("menu_bar.php");
+
 $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 $server = $url["host"];

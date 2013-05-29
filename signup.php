@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
-</head>
-<body id="sign_up" onload="">
-<?php include("menu_bar.php"); ?>
+<?php
+$title = "Sign Up";
+include("menu_bar.php");
+?>
 <h1>Sign up for a new accout with canvas printing...</h1>
   <form action="sign_up_submit.php" method="post" accept-charset="utf-8" id="myForm" required="required">
     <p>Name: <input type="text" name="first_name" placeholder="First"id="first_name" required="required">

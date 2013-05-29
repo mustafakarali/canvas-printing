@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Orders</title>
-  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
-</head>
-<body>
 <?php
 $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
 
@@ -48,9 +40,11 @@ $sql = "INSERT INTO clients(first_name, last_name, address_street, address_city,
 $result = mysql_query($sql, $link);
 
 mysql_close($link);
-?>
 
-  <?php include("menu_bar.php"); ?>
+$title = "Orders";
+include("menu_bar.php");
+
+?>
   <h1>Account Successfully Created!</h1>
   <h2>Congratulations <?php echo ''.$first_name.' '.$last_name.'';?></h2>
   <p>Go to our Gallery and browse our available pictures to purchase<br>or feel free to upload your own!!!</p>

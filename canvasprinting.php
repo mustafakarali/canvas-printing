@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-
-<html lang = "en">
-
-<head>
-  <meta http-equiv = "Content-type" content="text/html; charset=utf-8"/>
-  <title>Canvas Printing - What we do</title>
-  <link rel        = "stylesheet" href="css/master.css" type="text/css" media="screen" title="no title"/>
-</head>  
-<body>
-<?php include("menu_bar.php"); ?>
+<?php
+$title = "What we do";
+include("menu_bar.php");
+?>
   <h1>What we do...</h1>
   <p>
     A <strong>Canvas Print</strong>, also known as a <strong>stretched canvas</strong> or <strong>canvas art</strong>, 

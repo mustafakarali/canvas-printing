@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Orders</title>
-  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
-</head>
-<body>
 <?php
 $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
 
@@ -33,7 +25,8 @@ $err_code = $_FILES['image']['error'];
 $file_size = $_FILES['image']['size'];
 
 $description = $_POST['description'];
-include("menu_bar.php"); 
+$title = "Upload Image";
+include("menu_bar.php");
 $array = array('image/jpeg', 'image/pjpeg', 'image/gif', 'image/png');
 if(in_array($mime_type, $array)){
 //this will be used if the image is resized

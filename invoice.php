@@ -40,16 +40,9 @@ $query = "SELECT * FROM clients WHERE client_id = '$clientID'";
 $result = mysql_query($query, $link);
 $client = mysql_fetch_array($result);
 
+$title = "Orders";
+include("menu_bar.php");
 ?>
-
-<html lang="en">
-<head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Orders</title>
-  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
-</head>
-<body>
-<?php include("menu_bar.php"); ?>
 <div style="text-align: center;">
 <h3>Thank you <?php echo $client['first_name'];?> for Ordering a Canvas Print <br> from Martin Gingras Canvas Printing</h3>
 <p>imageID#: <strong><?php echo "$image_selected";?> </strong></p>

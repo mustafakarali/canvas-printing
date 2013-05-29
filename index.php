@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>index</title>
-  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
-
-
-</head>
-<body id="index" onload="">
-<?php include("menu_bar.php"); ?>
+<?php
+$title = "Home";
+include("menu_bar.php");
+?>
   <h1>
     Welcome To Canvas Printing by Martin Gingras
   </h1>
