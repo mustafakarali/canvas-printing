@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+<!-- <div style="text-align: center;">
   <div style="text-align: left; margin: 1em auto; width: 50%;">
     <table border="1">
       <tr>
@@ -32,7 +32,7 @@
 </div>
 
 </body>
-</html>
+</html> -->
 
   <div id="header">
     <div id="logo">
@@ -41,11 +41,12 @@
     </div>
     <div id="menu">
       <ul>
-        <li class="first current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-        <li><a href="#" accesskey="2" title="">Services</a></li>
-        <li><a href="#" accesskey="3" title="">About Us</a></li>
-        <li><a href="#" accesskey="4" title="">Careers</a></li>
-        <li><a href="#" accesskey="5" title="">Contact Us</a></li>
+        <li class="first current_page_item"><a href="index.php" accesskey="1" title="">Homepage</a></li>
+        <li><a href="gallery.php" accesskey="2" title="">Gallery</a></li>
+        <li><a href="upload.php" accesskey="3" title="">Upload</a></li>
+        <li><a href="canvas.php" accesskey="4" title="">Canvas Types</a></li>
+        <li><a href="about.php" accesskey="5" title="">About Us</a></li>
+        <li><a href="orders.php" accesskey="6" title="">Orders</a></li>
       </ul>
     </div>
   </div>
