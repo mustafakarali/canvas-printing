@@ -31,16 +31,6 @@ include("head.php");
     echo "Can't connect to database";
     die('Can\'t connect to $db : ' . mysql_error());
   }
-  
-
-
-
-
-  echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-  echo "Type: " . $_FILES["file"]["type"] . "<br>";
-  echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-  echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br>";
-
 
   if(($_FILES["file"]["size"] / 1024) > 20000){
     echo "Much too large image <br>";
@@ -58,6 +48,10 @@ include("head.php");
     }
     else
     {
+      echo "Uploaded: " . $_FILES["file"]["name"] . "<br>";
+      echo "Type: " . $_FILES["file"]["type"] . "<br>";
+      echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
+      // echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br>";
       if (file_exists("images/" . $_FILES["file"]["name"]))
       {
         echo $_FILES["file"]["name"] . " already exists. ";
@@ -73,11 +67,10 @@ include("head.php");
   else{
     echo "File is wrong format, only images please <br>";
   }
-
-  // $name = $_FILES['file']['name'];
-  // $sql = "INSERT INTO images(image_name, description) values ('$name', '$description')";
-  // $result = mysql_query($sql, $link);
-  // mysql_close($link);
+  $name = $_FILES['file']['name'];
+  $sql = "INSERT INTO images(image_name, description) values ('$name', '$description')";
+  $result = mysql_query($sql, $link);
+  mysql_close($link);
   ?>
 </div> <!-- fullbox -->
 </div> <!-- feature wrapper -->
