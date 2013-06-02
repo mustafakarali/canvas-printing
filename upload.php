@@ -17,6 +17,6 @@ include("head.php");
     </div>
     <p><input type= "submit" value="Upload to Gallery&rarr;"/></p>
   </form>
-</div> <!-- fullbox -->
+</div> <!-- fullboxdis -->
 </div> <!-- feature wrapper -->
 <?php include("footer.php"); ?>

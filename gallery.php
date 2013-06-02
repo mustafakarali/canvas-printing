@@ -29,9 +29,8 @@ include("head.php");
 
 ?>
 
-<div class="content"> <span>Where this came from</span>
-  <h2>About Us</h2>
-  <a href="mgprinting.php" class="button-style button-style-alt">What we do...</a>
+<div class="content"> <span>Please peruse this gallery of images at your leisure</span>
+  <h2>Gallery</h2>
 </div>
 </div> <!-- content -->
 <div id="featured-wrapper">
