@@ -60,12 +60,13 @@ else{
     
       <body id="order" onload="">
         <h1><?php echo "".$client['first_name']." ".$client['last_name']."";?>'s Orders</h1>
+        <br><br>
         <table border="1" style="text-align:center;color:white;">
           <tr>
-            <th><h3>Image</h3></th>
-            <th><h3>Height</h3></th>
-            <th><h3>Width</h3></th>
-            <th><h3>Cost</h3></th>
+            <th><h3 style="width:100px;">Image</h3></th>
+            <th><h3 style="width:100px;">Height</h3></th>
+            <th><h3 style="width:100px;">Width</h3></th>
+            <th><h3 style="width:100px;">Cost</h3></th>
           </tr>
           <?php 
           while($row = mysql_fetch_array($order)){
