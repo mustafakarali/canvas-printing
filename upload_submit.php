@@ -70,7 +70,8 @@ include("head.php");
   {
     echo "Invalid file";
   }
-  $sql = "INSERT INTO images(image_name, description) values ($_FILES['file']['name'], '$description')";
+  $name = $_FILES['file']['name'];
+  $sql = "INSERT INTO images(image_name, description) values ('$name', '$description')";
   $result = mysql_query($sql, $link);
   mysql_close($link);
   ?>
