@@ -20,7 +20,7 @@ To-Do
 - Migrate to Heroku supported PHP functions *done*
 - Update scripts/generateDatabase.sql to match layout I would like *done*
 - Update CSS *done*
-- Get image upload to function on Heroku/cleardb:ignite
+- Get image upload to function on Heroku/cleardb:ignite *done*
 - Update site content and code to match more recent skills
 - JQuery to set current pages' menubar reference class to current_page_item
 - JS cookies to persist session
