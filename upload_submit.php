@@ -34,7 +34,7 @@ include("head.php");
   
   $allowedExts = array("gif", "jpeg", "jpg", "png");
   $extension = end(explode(".", $_FILES["file"]["name"]));
-  if (!($_FILES["file"]["type"] == "image/gif")
+  if (($_FILES["file"]["type"] == "image/gif")
   || ($_FILES["file"]["type"] == "image/jpeg")
   || ($_FILES["file"]["type"] == "image/jpg")
   || ($_FILES["file"]["type"] == "image/pjpeg")
@@ -69,7 +69,7 @@ include("head.php");
   //     {
   //       move_uploaded_file($_FILES["file"]["tmp_name"],
   //       "images/" . $_FILES["file"]["name"]);
-  //       echo "Stored in: " . "upload/" . $_FILES["file"]["name"];
+  //       echo "Stored in: " . "images/" . $_FILES["file"]["name"];
   //     }
   //   }
   // }
