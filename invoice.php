@@ -49,9 +49,9 @@ include("head.php");
 </div> <!-- content -->
 </div> <!-- page -->
 <div id="featured-wrapper">
-<div id="fullbox" style="text-align:center;padding:15px;">
+<div id="fullbox" style="text-align:center;">
   <center>
-      <div  style="width:300px;background:white;border:1px dashed black;">
+      <div  style="width:300px;background:white;border:1px dashed black;padding:15px;">
         <h3>Thank you <?php echo $client['first_name'];?> for Ordering a Canvas Print <br> from Martin Gingras Canvas Printing</h3>
           <p>imageID#: <strong><?php echo "$image_selected";?> </strong></p>
           <p>--------------</p>
@@ -59,7 +59,7 @@ include("head.php");
           <p>Shipping:&nbsp; <strong>10$</strong></p>
           <p>Tax: &nbsp;&nbsp;&nbsp;<strong><?php echo "$tax";?>$</strong></p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;________</p>
-          <p><strong>Total: <?php echo "$totalCost";?>$</strong></p>
+          <p><strong>Total: $ <?php echo "$totalCost";?></strong></p>
         </div>
       </center>
   </div> <!-- box1 -->
