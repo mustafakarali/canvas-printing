@@ -4,8 +4,8 @@ include("head.php");
 ?>
 <div class="content"> <span>Upload your our own images for printing</span>
   <h2>Upload</h2>
-</div>
 </div> <!-- content -->
+</div> <!-- page -->
 <div id="featured-wrapper">
 <div id="box1">
   <form action = "upload_submit.php" method="post"  enctype = "multipart/form-data">

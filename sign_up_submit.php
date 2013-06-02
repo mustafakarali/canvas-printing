@@ -1,4 +1,14 @@
 <?php
+$title = "Signing up";
+include("head.php");
+
+?>
+<div class="content"> <span>View past orders from mgprinting</span>
+  <h2>Orders</h2>
+</div> <!-- content -->
+</div>  
+
+<?php
 $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 $server = $url["host"];
@@ -41,15 +51,21 @@ $result = mysql_query($sql, $link);
 
 mysql_close($link);
 
-$title = "Orders";
-include("head.php");
-
 ?>
-  <h1>Account Successfully Created!</h1>
-  <h2>Congratulations <?php echo ''.$first_name.' '.$last_name.'';?></h2>
-  <p>Go to our Gallery and browse our available pictures to purchase<br>or feel free to upload your own!!!</p>
-  <?php
+
+<div id="featured-wrapper">
+<div id="box1">
+  <form action="display_orders.php" method="post" id="myForm">
+    <p>E-mail: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="username" value="" placeholder="E-mail" id="username"></p>
+    <p>Password: <input type="password" name="password" placeholder="Password" value="" id="password"></p>
+    <p>If you don't have an account ...<br><a href="signup.php">sign up for an account now...</a></p>
+    <p><input type="button" onclick="login();" value="Log In &rarr;"></p>
+  </form>
+</div> <!-- box1 -->
+</div> <!-- feature wrapper -->
+<?php include("footer.php"); ?>
+
+
+<?php
 }
   ?>
-</body>
-</html>

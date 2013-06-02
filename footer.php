@@ -16,10 +16,10 @@
     <h2>Contact</h2>
     <p>Feel free to reach out to me at <a href="mailto:martin@magingras.com?Subject=Canvas%20Printing">martin@magingras.com</a>.</p>
     <ul class="style2">
-      <li><a href="http://github.com/mgingras/"><i class="icon-github icon-2x"></i></a></li>
-      <li><a href="http://www.linkedin.com/in/martinpgingras"><i class="icon-linkedin-sign icon-2x"></i></a></li>
-      <li><a href="https://twitter.com/martin_gingras"><i class="icon-twitter-sign icon-2x"></i></a></li>
-      <li><a href="mailto:martin@magingras.com?Subject=Your%20Website" title="Email Me!"><i class="icon-envelope-alt icon-2x"></i></li>
+      <li><a style="text-decoration:none;" href="http://github.com/mgingras/"><i class="icon-github icon-2x"></i></a></li>
+      <li><a style="text-decoration:none;" href="http://www.linkedin.com/in/martinpgingras"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+      <li><a style="text-decoration:none;" href="https://twitter.com/martin_gingras"><i class="icon-twitter-sign icon-2x"></i></a></li>
+      <li><a style="text-decoration:none;" href="mailto:martin@magingras.com?Subject=Your%20Website" title="Email Me!"><i class="icon-envelope-alt icon-2x"></i></li>
       </ul>
     </div> <!-- fbox3 -->
   </div> <!-- footer-content -->

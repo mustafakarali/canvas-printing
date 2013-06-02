@@ -8,6 +8,7 @@
 	<title><?php echo "Canvas Printing - $title" ?></title>
 	<link rel="stylesheet" href="css/master.css" type="text/css" media="all" charset="utf-8">
   <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="icon" type="image/ico" href="images/favicon.ico">
 	<script type="text/javascript" src="scripts/javaScripts.js"></script>
 </head>
 <body>

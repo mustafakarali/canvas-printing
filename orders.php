@@ -4,8 +4,8 @@ include("head.php");
 ?>
 <div class="content"> <span>View past orders from mgprinting</span>
   <h2>Orders</h2>
-</div>
 </div> <!-- content -->
+</div> <!-- page -->
 <div id="featured-wrapper">
 <div id="box1">
   <form action="display_orders.php" method="post" id="myForm">
