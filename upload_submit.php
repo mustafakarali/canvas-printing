@@ -36,25 +36,43 @@ include("head.php");
 
 
 
-      echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-      echo "Type: " . $_FILES["file"]["type"] . "<br>";
-      echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-      echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br>";
+  echo "Upload: " . $_FILES["file"]["name"] . "<br>";
+  echo "Type: " . $_FILES["file"]["type"] . "<br>";
+  echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
+  echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br>";
 
 
-      if(($_FILES["file"]["size"] / 1024) > 200){
-        echo "Much too large image <br>";
+  if(($_FILES["file"]["size"] / 1024) > 20000){
+    echo "Much too large image <br>";
+  }
+  else if(($_FILES["file"]["type"] == "image/gif")
+  || ($_FILES["file"]["type"] == "image/jpeg")
+  || ($_FILES["file"]["type"] == "image/jpg")
+  || ($_FILES["file"]["type"] == "image/pjpeg")
+  || ($_FILES["file"]["type"] == "image/x-png")
+  || ($_FILES["file"]["type"] == "image/png"))
+  {
+    if ($_FILES["file"]["error"] > 0)
+    {
+      echo "File upload error with Return Code: " . $_FILES["file"]["error"] . "<br>";
+    }
+    else
+    {
+      if (file_exists("images/" . $_FILES["file"]["name"]))
+      {
+        echo $_FILES["file"]["name"] . " already exists. ";
       }
-      if(($_FILES["file"]["type"] == "image/gif")
-|| ($_FILES["file"]["type"] == "image/jpeg")
-|| ($_FILES["file"]["type"] == "image/jpg")
-|| ($_FILES["file"]["type"] == "image/pjpeg")
-|| ($_FILES["file"]["type"] == "image/x-png")
-|| ($_FILES["file"]["type"] == "image/png"))
-{
-          echo "Image type is fine <br>";
-}
-
+      else
+      {
+        move_uploaded_file($_FILES["file"]["tmp_name"],
+        "images/" . $_FILES["file"]["name"]);
+        echo "Stored in: " . "images/" . $_FILES["file"]["name"];
+      }
+    }
+  }
+  else{
+    echo "File is wrong format, only images please <br>";
+  }
 
   // $name = $_FILES['file']['name'];
   // $sql = "INSERT INTO images(image_name, description) values ('$name', '$description')";
