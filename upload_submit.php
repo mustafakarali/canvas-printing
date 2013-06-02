@@ -32,56 +32,16 @@ include("head.php");
     die('Can\'t connect to $db : ' . mysql_error());
   }
   
-  $allowedExts = array("gif", "jpeg", "jpg", "png");
-  $extension = end(explode(".", $_FILES["file"]["name"]));
-  if (($_FILES["file"]["type"] == "image/gif")
-  || ($_FILES["file"]["type"] == "image/jpeg")
-  || ($_FILES["file"]["type"] == "image/jpg")
-  || ($_FILES["file"]["type"] == "image/pjpeg")
-  || ($_FILES["file"]["type"] == "image/x-png")
-  || ($_FILES["file"]["type"] == "image/png"))
-  {
-    echo "Not right file type";
-  }
-  if (!($_FILES["file"]["size"] < 20000)){
-    echo " Wrong size";
-  }
-  if (in_array($extension, $allowedExts))
-  {
-    echo "Extension not in the array";
-  } 
-  //   if ($_FILES["file"]["error"] > 0)
-  //   {
-  //     echo "Return Code: " . $_FILES["file"]["error"] . "<br>";
-  //   }
-  //   else
-  //   {
-  //     echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-  //     echo "Type: " . $_FILES["file"]["type"] . "<br>";
-  //     echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-  //     echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br>";
-  // 
-  //     if (file_exists("images/" . $_FILES["file"]["name"]))
-  //     {
-  //       echo $_FILES["file"]["name"] . " already exists. ";
-  //     }
-  //     else
-  //     {
-  //       move_uploaded_file($_FILES["file"]["tmp_name"],
-  //       "images/" . $_FILES["file"]["name"]);
-  //       echo "Stored in: " . "images/" . $_FILES["file"]["name"];
-  //     }
-  //   }
-  // }
-  // else
-  // {
-  //   echo "Invalid file" . "<br>";
-  //   echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-  //   echo "Type: " . $_FILES["file"]["type"] . "<br>";
-  //   echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-  //   echo "Stored in: " . $_FILES["file"]["tmp_name"];
-  //   echo "Error: " . $_FILES["file"]["error"] . "<br>";
-  // }
+
+
+
+
+      echo "Upload: " . $_FILES["file"]["name"] . "<br>";
+      echo "Type: " . $_FILES["file"]["type"] . "<br>";
+      echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
+      echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br>";
+
+
   // $name = $_FILES['file']['name'];
   // $sql = "INSERT INTO images(image_name, description) values ('$name', '$description')";
   // $result = mysql_query($sql, $link);
