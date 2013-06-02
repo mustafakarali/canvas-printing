@@ -21,13 +21,21 @@ if (!$db_selected) {
 
 $result = mysql_query("SELECT * FROM images", $link);
 if (!$result) {
-    throw new Exception("Database Error [{$this->database->errno}] {$this->database->error}");
+  throw new Exception("Database Error [{$this->database->errno}] {$this->database->error}");
 }
 
 $title = "Gallery";
 include("head.php");
 
 ?>
+
+<div class="content"> <span>Where this came from</span>
+  <h2>About Us</h2>
+  <a href="mgprinting.php" class="button-style button-style-alt">What we do...</a>
+</div>
+</div> <!-- content -->
+<div id="featured-wrapper">
+<div id="fullbox">
   <form action="login.php" method="post" accept-charset="utf-8">
     <table border     = "1" >
       <tr>
@@ -58,12 +66,8 @@ include("head.php");
       }
       mysql_close($link);
       ?>
-    </form>
-
-
-
-  </table>
-
-
-</body>
-</html>
+    </table>
+  </form>
+</div> <!-- box1 -->
+</div> <!-- feature wrapper -->
+<?php include("footer.php"); ?>

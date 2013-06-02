@@ -504,7 +504,11 @@ ul.style4 .first
 	width: 252px;
 	padding-right: 50px;
 }
-
+#fullbox
+{
+	float: left;
+	width: 100%;
+}
 
 #box1
 {
