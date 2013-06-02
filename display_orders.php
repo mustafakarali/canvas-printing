@@ -51,7 +51,7 @@ else{
     $row = mysql_fetch_array($image);
     ?>
     
-    <div class="content"> <span>Your past orders from mgprinting</span>
+    <div class="content"> <span>Images you've previousy ordered from mgprinting</span>
       <h2>Past Orders</h2>
     </div> <!-- content -->
   </div> <!-- page -->

@@ -2,7 +2,7 @@
 $title = "Upload";
 include("head.php");
 ?>
-<div class="content"> <span>Upload your our own images for printing</span>
+<div class="content"> <span>Upload your our own images to our gallery</span>
   <h2>Upload</h2>
 </div> <!-- content -->
 </div> <!-- page -->
