@@ -17,7 +17,7 @@ include("head.php");
       <td>Shipping</td>
       <td>10$ (Flat Fee)</td>
     <tr>
-      <td rowspan>Tax</td>
+      <td>Tax</td>
       <td>13% (On Cost + Shipping)</td>
     </tr>
   </table>

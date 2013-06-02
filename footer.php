@@ -2,7 +2,7 @@
   <div id="fbox1">
     <h2>Recent Updates</h2>
     <ul class="style1">
-      <li class="first"><a href="#">The collection of ... was added</a></li>
+      <li class="first"><a href="http://www.andrewcollier.ca/">The collection of Andrew Collier was added</a></li>
       <li><a href="#">We've brought in some photographs from young aspiring artists</a></li>
       <li><a href="#">Art weekend in New York was a blast, mgprinting was there in full force</a></li>
     </ul>

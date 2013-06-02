@@ -5,8 +5,8 @@ include("head.php");
 <div class="content"> <span>Learn about our two different types of canvases</span>
   <h2>Canvas Types</h2>
   <!-- <a href="mgprinting.php" class="button-style button-style-alt">What we do...</a> -->
-</div>
 </div> <!-- content -->
+</div> <!-- page -->
 <div id="featured-wrapper">
 <div id="box1">
   <h3>Museum Wrap</h3>

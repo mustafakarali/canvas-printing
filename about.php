@@ -5,8 +5,8 @@ include("head.php");
 <div class="content"> <span>Where this came from</span>
   <h2>About Us</h2>
   <a href="mgprinting.php" class="button-style button-style-alt">What we do...</a>
-</div>
 </div> <!-- content -->
+</div> <!-- page -->
 <div id="featured-wrapper">
 <div id="box1">
   <h2>Site Developed By: <strong>Martin Gingras</strong></h2>
