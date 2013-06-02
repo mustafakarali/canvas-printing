@@ -4,7 +4,7 @@ include("head.php");
 ?>
 <div class="content"> <span>Thank you for contributing to our gallery</span>
   <h2>Image Upload</h2>
-  <a href="mgprinting.php" class="button-style button-style-alt">What we do...</a>
+  <a href="gallery.php" class="button-style button-style-alt">Go to Gallery...</a>
 </div> <!-- content -->
 </div> <!-- page -->
 <div id="featured-wrapper">
@@ -40,6 +40,20 @@ include("head.php");
       echo "Type: " . $_FILES["file"]["type"] . "<br>";
       echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
       echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br>";
+
+
+      if(($_FILES["file"]["size"] / 1024) > 200){
+        echo "Much too large image <br>";
+      }
+      if(($_FILES["file"]["type"] == "image/gif")
+|| ($_FILES["file"]["type"] == "image/jpeg")
+|| ($_FILES["file"]["type"] == "image/jpg")
+|| ($_FILES["file"]["type"] == "image/pjpeg")
+|| ($_FILES["file"]["type"] == "image/x-png")
+|| ($_FILES["file"]["type"] == "image/png"))
+{
+          echo "Image type is fine <br>";
+}
 
 
   // $name = $_FILES['file']['name'];
