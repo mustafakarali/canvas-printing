@@ -43,22 +43,23 @@ $client = mysql_fetch_array($result);
 $title = "Orders";
 include("head.php");
 ?>
-<div class="content"> <span>Learn about our two different types of canvases</span>
-  <h2>Canvas Types</h2>
+<div class="content"> <span>Thank you for your order</span>
+  <h2>Invoice</h2>
   <!-- <a href="mgprinting.php" class="button-style button-style-alt">What we do...</a> -->
-</div>
 </div> <!-- content -->
+</div> <!-- page -->
 <div id="featured-wrapper">
-<div id="box1">
-  <div style="text-align: center;">
-    <h3>Thank you <?php echo $client['first_name'];?> for Ordering a Canvas Print <br> from Martin Gingras Canvas Printing</h3>
-    <p>imageID#: <strong><?php echo "$image_selected";?> </strong></p>
-    <p>--------------</p>
-    <p>Cost: &nbsp;&nbsp;&nbsp;<strong><?php echo "$cost";?>$</strong></p>
-    <p>Shipping:&nbsp; <strong>10$</strong></p>
-    <p>Tax: &nbsp;&nbsp;&nbsp;<strong><?php echo "$tax";?>$</strong></p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;________</p>
-    <p><strong>Total: <?php echo "$totalCost";?>$</strong></p>
+<div id="fullbox" style="text-align: center;border:1px dashed black;">
+    <div>
+      <h3>Thank you <?php echo $client['first_name'];?> for Ordering a Canvas Print <br> from Martin Gingras Canvas Printing</h3>
+        <p>imageID#: <strong><?php echo "$image_selected";?> </strong></p>
+        <p>--------------</p>
+        <p>Cost: &nbsp;&nbsp;&nbsp;<strong><?php echo "$cost";?>$</strong></p>
+        <p>Shipping:&nbsp; <strong>10$</strong></p>
+        <p>Tax: &nbsp;&nbsp;&nbsp;<strong><?php echo "$tax";?>$</strong></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;________</p>
+        <p><strong>Total: <?php echo "$totalCost";?>$</strong></p>
+      </div>
   </div> <!-- box1 -->
   <!--div id="box2">
   <h2 style="text-align: center;padding-top: 150px;">VS</h2>
