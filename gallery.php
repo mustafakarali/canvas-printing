@@ -37,16 +37,16 @@ include("head.php");
 <div id="featured-wrapper">
 <div id="fullbox">
   <form action="login.php" method="post" accept-charset="utf-8">
-    <table border = "1" >
+    <table border = "1" style="text-align:center:">
       <tr>
         <th>
-          <p>Description</p>
+          <h3>Description</h3>
         </th>
         <th>
-          <p>Image</p>
+          <h3>Image</h3>
         </th>
         <th>
-          <p>Order</p>
+          <h3>Order</h3>
         </th>
       </tr>
 
@@ -57,10 +57,8 @@ include("head.php");
       
       while($row = mysql_fetch_array($result)){
         echo "<tr>\n";
-        echo "<td><p>". $row['description']. "</p></td>\n";
-        echo "<td> <img src    = 'images/".$row['image_name']."' alt=".$row['image_id']."  width='400' height='200'></td>\n";
-
-        //  echo "<td><input type='submit' value='Order &rarr;' = name='order_id'></td>";
+        echo "<td><h3>". $row['description']. "</h3></td>\n";
+        echo "<td> <img src = 'images/".$row['image_name']."' alt=".$row['image_id']."  width='400' height='200'></td>\n";
         echo "<td><input type='submit' name='". $row['image_name']."' onClick='updateSelected(".$row['image_id'].");' value='Order This Image &rarr;'></td>\n";
         echo "</tr>";
       }
