@@ -23,7 +23,7 @@
       </ul>
     </div> <!-- fbox3 -->
   </div> <!-- footer-content -->
-</div> <!-- page -->
+</div> <!-- wrapper -->
 <div id="footer">
   <p>Copyright (c) 2013 mgprinting.herokuapp.com. All rights reserved. Design by <strong>Martin Gingras from </strong><a href="http://www.magingras.com/" rel="nofollow">magingras.com</a>.</p>
 </div> <!-- footer -->

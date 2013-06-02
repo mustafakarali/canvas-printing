@@ -2,11 +2,6 @@
 $title = "Upload Image";
 include("head.php");  
 ?>
-<div class="content"> <span>View past orders from mgprinting</span>
-  <h2>Orders</h2>
-  <!-- <a href="mgprinting.php" class="button-style button-style-alt">What we do...</a> -->
-</div>
-</div> <!-- content -->
 <div id="featured-wrapper">
 <div id="fullbox" style="text-align:center;">
   <?php

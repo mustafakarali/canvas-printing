@@ -37,7 +37,7 @@ include("head.php");
 <div id="featured-wrapper">
 <div id="fullbox">
   <form action="login.php" method="post" accept-charset="utf-8">
-    <table border = "1" style="text-align:center:">
+    <table border = "1" style="text-align:center">
       <tr>
         <th>
           <h3>Description</h3>

@@ -2,7 +2,7 @@
   <div id="logo">
     <h1><a href="#"><span>mg</span>printing</a></h1>
     <p>Gallery and Printing Services to fullfuill all your canvas printing desires</p>
-  </div>
+  </div> <!-- logo -->
   <div id="menu">
     <ul>
       <!-- Set class to current_page_item to hightlight -->
@@ -13,5 +13,5 @@
       <li><a href="about.php" accesskey="5" title="">About Us</a></li>
       <li><a href="orders.php" accesskey="6" title="">Orders</a></li>
     </ul>
-  </div>
-</div>
+  </div> <!-- logo -->
+</div> <!-- header -->

@@ -4,13 +4,11 @@ include("head.php");
 ?>
 <div class="content"> <span>View past orders from mgprinting</span>
   <h2>Orders</h2>
-  <!-- <a href="mgprinting.php" class="button-style button-style-alt">What we do...</a> -->
 </div>
 </div> <!-- content -->
 <div id="featured-wrapper">
 <div id="box1">
   <form action="display_orders.php" method="post" id="myForm">
-
     <p>E-mail: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="username" value="" placeholder="E-mail" id="username"></p>
     <p>Password: <input type="password" name="password" placeholder="Password" value="" id="password"></p>
     <p>If you don't have an account ...<br><a href="signup.php">sign up for an account now...</a></p>
