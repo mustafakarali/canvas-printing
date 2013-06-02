@@ -7,18 +7,16 @@ include("head.php");
 </div> <!-- content -->
 </div> <!-- page -->
 <div id="featured-wrapper">
-<div id="box1">
+<div id="fullbox">
   <form action = "upload_submit.php" method="post"  enctype = "multipart/form-data">
-    Pick a image from your hard drive to upload:<br/><br/>
+    <h3>Choose an image from your hard drive to upload:</h3><br/><br/>
     <input type= "file" id="image_upload" name="image"/><br/><br/>
     <p>Description of Image:</p>
     <div style= "max-height:400px;max-width:400px;overflow:auto;">
-      <textarea rows = "5" cols="52" placeholder="Enter Description of Image here"  name="description" required="required"></textarea>
+      <textarea rows = "5" cols="52" placeholder="Please enter a brief description of the image that you're uploading"  name="description" required="required"></textarea>
     </div>
-    <p>
-      <input type= "submit" value="Upload to Gallery&rarr;"/>
-    </p>
+    <p><input type= "submit" value="Upload to Gallery&rarr;"/></p>
   </form>
-</div> <!-- box1 -->
+</div> <!-- fullbox -->
 </div> <!-- feature wrapper -->
 <?php include("footer.php"); ?>

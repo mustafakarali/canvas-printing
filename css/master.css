@@ -477,11 +477,15 @@ ul.style4 .first
 {
   color: #9F9F9F;
 }
-
+a:hover .button-style
+{
+background: red;
+}
 #footer-content .button-style
 {
   color: #FFFFFF !important;
 }
+
 
 #footer-content #fbox1
 {

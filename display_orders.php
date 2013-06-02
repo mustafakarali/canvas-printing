@@ -1,6 +1,5 @@
-
 <?php
-$title = "Order";
+$title = "Past Orders";
 include("head.php");
 
 $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -51,30 +50,41 @@ else{
     $image = mysql_query("SELECT * FROM images WHERE image_id = '$selected_image'", $link);
     $row = mysql_fetch_array($image);
     ?>
-    <body id="order" onload="">
-      <h1><?php echo "".$client['first_name']." ".$client['last_name']."";?>'s Orders</h1>
-      <table border="1" >
-        <tr>
-          <th>Image</th>
-          <th>Height</th>
-          <th>Width</th>
-          <th>Cost</th>
-        </tr>
-        <?php 
-        while($row = mysql_fetch_array($order)){
-          echo "<tr>";
-          $image_q = mysql_query("SELECT * FROM images WHERE image_id = '$row[image_id]'", $link);
-          $image = mysql_fetch_array($image_q);
-          echo "<td> <img src = 'images/".$image['image_name']."' alt=".$row['image_id']."  width='400' height='200'></td>\n";
-          echo '<td>'.$row['height'].'" </td>';
-          echo '<td>'.$row['width'].'" </td>';
-          echo '<td>'.$row['cost'].'$ </td>';
-          echo "</tr>";
+    
+    <div class="content"> <span>Your past orders from mgprinting</span>
+      <h2>Past Orders</h2>
+    </div> <!-- content -->
+  </div> <!-- page -->
+  <div id="featured-wrapper">
+    <div id="fullbox">
+    
+      <body id="order" onload="">
+        <h1><?php echo "".$client['first_name']." ".$client['last_name']."";?>'s Orders</h1>
+        <table border="1" style="text-align:center;color:white;">
+          <tr>
+            <th><h3>Image</h3></th>
+            <th><h3>Height</h3></th>
+            <th><h3>Width</h3></th>
+            <th><h3>Cost</h3></th>
+          </tr>
+          <?php 
+          while($row = mysql_fetch_array($order)){
+            echo "<tr>";
+            $image_q = mysql_query("SELECT * FROM images WHERE image_id = '$row[image_id]'", $link);
+            $image = mysql_fetch_array($image_q);
+            echo "<td> <img src = 'images/".$image['image_name']."' alt=".$row['image_id']."  width='400' height='200'></td>\n";
+            echo '<td>'.$row['height'].'" </td>';
+            echo '<td>'.$row['width'].'" </td>';
+            echo '<td>'.$row['cost'].'$ </td>';
+            echo "</tr>";
+          }
+          echo "</table>";
         }
-        echo "</table>";
+        mysql_close($link);
       }
-      mysql_close($link);
-    }
-    ?>
-  </body>
-  </html>
+      ?>
+    
+    
+    </div> <!-- fullbox -->
+  </div> <!-- feature wrapper -->
+  <?php include("footer.php"); ?>
