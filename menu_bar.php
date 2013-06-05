@@ -2,6 +2,7 @@
   <div id="logo">
     <h1><a href="#"><span>mg</span>printing</a></h1>
     <p>Gallery and Printing Services to fullfuill all your canvas printing desires</p>
+    <p><i>This is not a real site, it is only for proof of concept</i></p>
   </div> <!-- logo -->
   <div id="menu">
     <ul>
