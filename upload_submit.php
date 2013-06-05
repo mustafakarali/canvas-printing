@@ -32,7 +32,7 @@ include("head.php");
     die('Can\'t connect to $db : ' . mysql_error());
   }
 
-  if(($_FILES["file"]["size"] / 1024) > 20000){
+  if(($_FILES["file"]["size"] / 1024) > 10240){
     echo "Much too large image <br>";
   }
   else if(($_FILES["file"]["type"] == "image/gif")
