@@ -39,15 +39,16 @@ INSERT INTO clients(first_name, last_name, address_street, address_city, provinc
 ("Martin","Gingras","3480 McCarthy Rd.","Ottawa","Ontario","K1V9A1","martin@magingras.com","password");
 
 INSERT INTO images (image_id, image_name, description) VALUES
-(1000, "one.jpeg", "Beautiful beach covered in driftwood at dusk");
+(1000, "one.jpeg", "Beautiful grassy hillside with lots of sunlight with a nicely handcrafted bench.");
 INSERT INTO images (image_name, description) VALUES
-("two.jpeg", "Sunset on a peaceful lake with stray clouds"),
-("three.jpeg", "Sunset silhouetting the mountains with the sky full of stray clouds"),
-("four.jpeg", "Beach scene framed in sunlight with forestry off in the background"),
-("five.jpeg", "Mist covered island encased in sunlight"),
-("six.jpeg", "The leaves of fall captured in all their colourful splendour"),
-("seven.jpeg", "A lake bathed in sunlight fading into a mysterious fog encompassing a forest in the background"),
-("eight.jpeg", "Frost settling down on a forest in the early stages of winter"),
-("nine.jpeg", "A solitary rock framed in the foreground with a beautiful sunset coloring the sky behind it"),
-("ten.jpeg", "The colors of fall reflected in the water of a calm river");
+("two.jpeg", "Beautiful sunset over a grass hillside."),
+("three.jpeg", "A nice countryside landscape with houses off in the distance."),
+("four.jpeg", "Beach scene framed in sunlight with a hill rising off into the distance."),
+("five.jpeg", "Mist encased mountain off in the distance with colorful buildings in the foregrounds."),
+("six.jpeg", "City lights captured in the dusk glow."),
+("seven.jpeg", "A cityscape with the lights captured."),
+("eight.jpeg", "Kitty cat sitting there cutely."),
+("nine.jpeg", "Clouds!!"),
+("ten.jpeg", "Yellow beatle."),
+("eleven.jpeg", "Cute kitty cat, with it's eyes closed.");
 
