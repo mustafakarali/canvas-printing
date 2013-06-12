@@ -21,6 +21,7 @@ To-Do
 - Update scripts/generateDatabase.sql to match layout I would like *done*
 - Update CSS *done*
 - Get image upload to function on Heroku/cleardb:ignite *done*
-- Update site content and code to match more recent skills
+- Update site content *done*
+- Update code to match more recent skill level
 - JQuery to set current pages' menubar reference class to current_page_item
-- JS cookies to persist session
+- JS cookies to persist session (try using Persona as Identification)
