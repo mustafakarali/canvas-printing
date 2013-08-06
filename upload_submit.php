@@ -74,4 +74,7 @@ include("head.php");
   ?>
 </div> <!-- fullbox -->
 </div> <!-- feature wrapper -->
+<script type="text/javascript" charset="utf-8">
+$('#upload').addClass('current_page_item');
+</script>
 <?php include("footer.php"); ?>

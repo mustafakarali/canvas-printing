@@ -18,7 +18,7 @@ include("head.php");
     <ul class="style3">
       <li class="first"></li>
       <li><h3><i class="icon-phone icon-2x"></i> 613-123-4567</h3></li>
-      <li><h3><a style="color:white;" href="mailto:martin@magingras.com?subject=mgprinting"><i class="icon-envelope-alt icon-2x"></i> martin@magingras.com</a></h3></li>
+      <li><h3><a style="color:white;" href="mailto:martin@mgingras.ca?subject=mgprinting"><i class="icon-envelope-alt icon-2x"></i> martin@mgingras.ca</a></h3></li>
       <li><h3><a style="color:white;" href="http://www.magingras.com"><i class="icon-keyboard icon-2x"></i> magingras.com</a></h3></li>
       <li>
       </ul>
@@ -32,4 +32,7 @@ include("head.php");
         </ul>
       </div> <!-- box3 -->
     </div> <!-- feature wrapper -->
+    <script type="text/javascript" charset="utf-8">
+    $('#about').addClass('current_page_item');
+    </script>
     <?php include("footer.php"); ?>

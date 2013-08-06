@@ -13,11 +13,11 @@ include("head.php");
   <h2>Other Sites<br><span>by Martin Gingras</span></h2>
   <p>Check out some of these other sites created by Martin.</p>
   <ul class="style4">
-    <li class="first"><a href="http://www.synonymizer.herokuapp.com">Synonymizer Web App</a></li>
+    <li class="first"><a href="http://synonymizer.herokuapp.com">Synonymizer Web App</a></li>
     <!-- <li><a href="#">Metus aliquam pellentesque</a></li> -->
     <!-- <li><a href="#">Proin gravida orci porttitor</a></li> -->
   </ul>
-  <a href="http://www.magingras.com/" class="button-style">magingras.com</a> 
+  <a href="http://www.mgingras.ca/" class="button-style">mgingras.ca</a> 
 </div> <!-- box1 -->
 <div id="box2">
   <h2>Upcoming<br />
@@ -47,7 +47,7 @@ include("head.php");
         <ul class="style4">
           <li class="first"><a href="#">Browse our gallery</a></li>
           <li><a href="gallery.php">Upload your own pictures to our gallery</a></li>
-          <li><a href="canvas.php"></a>Check out our different canvas tyles</li>
+          <li><a href="canvas.php">Check out our different canvas styles</a></li>
           <li><a href="orders.php">Look at your past orders</a></li>
         </ul>
       </div> <!-- box3 -->

@@ -36,7 +36,7 @@ PRIMARY KEY (image_id)
 -- Establishing the Images Database some Images and their descriptions
 
 INSERT INTO clients(first_name, last_name, address_street, address_city, province, postal_code, email, password) values
-("Martin","Gingras","3480 McCarthy Rd.","Ottawa","Ontario","K1V9A1","martin@magingras.com","password");
+("Martin","Gingras","3480 McCarthy Rd.","Ottawa","Ontario","K1V9A1","martin@mgingras.ca","password");
 
 INSERT INTO images (image_id, image_name, description) VALUES
 (1000, "one.jpeg", "Beautiful grassy hillside with lots of sunlight with a nicely handcrafted bench.");

@@ -67,4 +67,7 @@ include("head.php");
   </form>
 </div> <!-- box1 -->
 </div> <!-- feature wrapper -->
+<script type="text/javascript" charset="utf-8">
+$('#gallery').addClass('current_page_item');
+</script>
 <?php include("footer.php"); ?>

@@ -88,4 +88,7 @@ else{
     
     </div> <!-- fullbox -->
   </div> <!-- feature wrapper -->
+  <script type="text/javascript" charset="utf-8">
+  $('#orders').addClass('current_page_item');
+  </script>
   <?php include("footer.php"); ?>

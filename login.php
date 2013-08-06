@@ -8,7 +8,6 @@ include("head.php");
 ?>
 <div class="content"> <span>Log in to proccess your order</span>
   <h2>Login to Canvas Printing</h2>
-  <a href="mgprinting.php" class="button-style button-style-alt">What we do...</a>
 </div> <!-- content -->
 </div> <!-- page -->
 <div id="featured-wrapper">
@@ -22,4 +21,7 @@ include("head.php");
   </form>
 </div> <!-- fullbox -->
 </div> <!-- feature wrapper -->
+<script type="text/javascript" charset="utf-8">
+$('#orders').addClass('current_page_item');
+</script>
 <?php include("footer.php"); ?>
