@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="css/master.css" type="text/css" media="all" charset="utf-8">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="icon" type="image/ico" href="images/favicon.ico">
-	<script type="text/javascript" src="scripts/javaScripts.js"></script>
+  <script type="text/javascript" src="scripts/javaScripts.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 </head>
 <body>
 <div id="wrapper" class="container">

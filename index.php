@@ -52,4 +52,7 @@ include("head.php");
         </ul>
       </div> <!-- box3 -->
     </div> <!-- feature wrapper -->
+    <script type="text/javascript" charset="utf-8">
+    $('#home').addClass('current_page_item');
+    </script>
     <?php include("footer.php"); ?>
