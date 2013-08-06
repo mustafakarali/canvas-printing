@@ -23,5 +23,5 @@ To-Do
 - Get image upload to function on Heroku/cleardb:ignite *done*
 - Update site content *done*
 - Update code to match more recent skill level
-- JQuery to set current pages' menubar reference class to current_page_item
+- JQuery to set current pages' menubar reference class to current_page_item *done*
 - JS cookies to persist session (try using Persona as Identification)
