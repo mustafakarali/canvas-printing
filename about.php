@@ -19,7 +19,7 @@ include("head.php");
       <li class="first"></li>
       <li><h3><i class="icon-phone icon-2x"></i> 613-123-4567</h3></li>
       <li><h3><a style="color:white;" href="mailto:martin@mgingras.ca?subject=mgprinting"><i class="icon-envelope-alt icon-2x"></i> martin@mgingras.ca</a></h3></li>
-      <li><h3><a style="color:white;" href="http://www.magingras.com"><i class="icon-keyboard icon-2x"></i> magingras.com</a></h3></li>
+      <li><h3><a style="color:white;" href="http://www.mgingras.ca/"><i class="icon-keyboard icon-2x"></i> mgingras.ca</a></h3></li>
       <li>
       </ul>
     </div> <!-- box2 -->
@@ -27,7 +27,7 @@ include("head.php");
       <h2>Sites<br />
         <span>See some of his other sites:</span></h2>
         <ul class="style4">
-          <li class="first"><a style="color:white;" href="http://www.magingras.com">magingras.com</a></li>
+          <li class="first"><a style="color:white;" href="http://www.mgingras.ca/">mgingras.ca</a></li>
           <li><a style="color:white;" href="http://www.synonymizer.herokuapp.com">Synonymizer</a></li>
         </ul>
       </div> <!-- box3 -->

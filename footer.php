@@ -9,8 +9,8 @@
   </div> <!-- fbox1 -->
   <div id="fbox2">
     <h2>About</h2>
-    <p>This is <strong>mgprinting</strong>, a proof of concept website mocked up by Martin Gingras, using PHP, HTML, JavaScript, and CSS. To see more about Martin visit <a href="http://www.magingras.com/" rel="nofollow">magingras.com</a>.</p>
-    <a href="http://www.magingras.com" class="button-style">magingras.com</a> 
+    <p>This is <strong>mgprinting</strong>, a proof of concept website mocked up by Martin Gingras, using PHP, HTML, JavaScript, and CSS. To see more about Martin visit <a href="http://www.mgingras.ca/" rel="nofollow">mgingras.ca</a>.</p>
+    <a href="http://www.mgingras.ca/" class="button-style">mgingras.ca</a> 
   </div> <!-- fbox2 -->
   <div id="fbox3">
     <h2>Contact</h2>
@@ -25,7 +25,7 @@
   </div> <!-- footer-content -->
 </div> <!-- wrapper -->
 <div id="footer">
-  <p>Copyright (c) 2013 mgprinting.herokuapp.com. All rights reserved. Design by <strong>Martin Gingras from </strong><a href="http://www.magingras.com/" rel="nofollow">magingras.com</a>.</p>
+  <p>Copyright (c) 2013 mgprinting.herokuapp.com. All rights reserved. Design by <strong>Martin Gingras from </strong><a href="http://www.mgingras.ca/" rel="nofollow">mgingras.ca</a>.</p>
 </div> <!-- footer -->
 </body>
 </html>
